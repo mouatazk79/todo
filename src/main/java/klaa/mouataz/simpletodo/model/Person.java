@@ -2,6 +2,7 @@ package klaa.mouataz.simpletodo.model;
 
 import jakarta.persistence.*;
 import klaa.mouataz.simpletodo.enumerations.Gender;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,6 +11,7 @@ import java.util.Set;
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
