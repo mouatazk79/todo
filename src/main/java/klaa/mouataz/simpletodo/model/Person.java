@@ -26,5 +26,12 @@ public class Person {
     @OneToMany(mappedBy="person")
     private Set<Todo> todos;
 
-
+    public Person(Long id, String firstName, String lastName, Gender gender, String email, String password) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.email = email;
+        this.password = password;
+    }
 }

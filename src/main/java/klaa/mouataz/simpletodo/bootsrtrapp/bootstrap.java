@@ -21,10 +21,8 @@ public class bootstrap implements CommandLineRunner {
     }
     @Override
     public void run(String... args) throws Exception {
-        Todo todo1=null;
-        Person person1=null;
-        person1 =new Person(1L,"k","", Gender.MALE,"","", Set.of(todo1));
-        todo1 = new Todo(1L,"","",person1);
+        Person person1=new Person(1L,"k","mo", Gender.MALE,"@@@@","aaaaaaaa");
+        Todo todo1= new Todo(1L,"aaa","aaaaaa",person1);
         personRepository.save(person1);
         todoRepository.save(todo1);
 

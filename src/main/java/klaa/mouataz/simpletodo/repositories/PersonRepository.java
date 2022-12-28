@@ -10,5 +10,5 @@ import java.util.List;
 public interface PersonRepository extends CrudRepository<Person,Long> {
     Person findPersonById(Long id);
     List<Person> findAll();
-    void  deletePersonById(Long id);
+    void deletePeopleById(Long id);
 }

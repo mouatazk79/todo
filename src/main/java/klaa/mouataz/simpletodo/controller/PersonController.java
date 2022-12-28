@@ -21,13 +21,14 @@ public class PersonController {
     }
     @GetMapping("/all")
     public List<Person> getPersons(){
+        System.out.println(personService.getPersons());
         return personService.getPersons();
     }
     @PostMapping("/save")
     public void savePerson(@RequestBody Person person){
         personService.savePerson(person);
     }
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public void deletePerson(@PathVariable Long id){
         personService.deletePerson(id);
     }
