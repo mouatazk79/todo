@@ -20,8 +20,11 @@ public class Person {
     private String firstName;
     private String lastName;
     @Enumerated(EnumType.STRING)
+    @Column(unique = true,nullable = false)
     private Gender gender;
+    @Column(unique = true,nullable = false)
     private String email;
+    @Column(unique = true,nullable = false)
     private String password;
     @OneToMany(mappedBy="person")
     private Set<Todo> todos;
